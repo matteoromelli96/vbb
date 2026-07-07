@@ -1,0 +1,250 @@
+/* ===== DESKTOP LARGE ===== */
+@media (max-width: 1399.98px){
+  .gallery-img-premium{
+    height: 640px;
+  }
+}
+
+/* ===== LAPTOP / DESKTOP MEDIO ===== */
+@media (max-width: 1199.98px){
+  .gallery-img-premium{
+    height: 560px;
+  }
+
+  .hero-card{
+    max-width: 720px;
+  }
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 991.98px){
+  body{
+    padding-top: var(--mobileTopbarH);
+  }
+
+  .section{
+    padding: 72px 0;
+  }
+
+  .hero{
+    min-height: 78vh;
+  }
+
+  .hero-inner{
+    padding-bottom: 46px;
+  }
+
+  .marquee-track{
+    animation-duration: 30s;
+  }
+
+  .section-services-premium{
+    padding: 64px 0;
+  }
+
+  .services-premium-content{
+    padding-left: 0;
+  }
+
+  .service-premium-card{
+    padding: 18px 16px;
+    border-radius: 20px;
+  }
+
+  .service-premium-card h3{
+    font-size: 1.08rem;
+  }
+
+  .service-premium-card p{
+    font-size: .95rem;
+  }
+
+  .services-highlight-box{
+    padding: 18px 18px 14px;
+    border-radius: 20px;
+  }
+
+  .gallery-shell-premium{
+    border-radius: 24px;
+  }
+
+  .gallery-img-premium{
+    height: 460px;
+  }
+
+  .premium-thumbs{
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .premium-thumbs [data-bs-target]{
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+  }
+
+  .room-card-premium{
+    border-radius: 22px;
+  }
+
+  .room-img-wrapper{
+    height: 220px;
+  }
+
+  .review-booking-card{
+    padding: 22px 22px;
+    min-height: 180px;
+  }
+
+  .review-booking-title{
+    font-size: 1.32rem;
+  }
+
+  .review-booking-body{
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .review-score{
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    font-size: 1.05rem;
+  }
+
+  .carousel-control-minimal .carousel-control-prev-icon,
+  .carousel-control-minimal .carousel-control-next-icon{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ===== TELEFONO ===== */
+@media (max-width: 575.98px){
+  .display-5{
+    font-size: 2rem;
+  }
+
+  .lead{
+    font-size: 1.05rem;
+  }
+
+  .hero-card{
+    padding: 18px 16px 14px;
+  }
+
+  .hero-logo{
+    height: 64px;
+  }
+
+  .marquee-track{
+    animation-duration: 26s;
+  }
+
+  .section{
+    padding: 60px 0;
+  }
+
+  .gallery-img-premium{
+    height: 320px;
+  }
+
+  .premium-thumbs{
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+  }
+
+  .premium-thumbs [data-bs-target]{
+    min-width: 52px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .room-img-wrapper{
+    height: 210px;
+  }
+
+  .room-content{
+    padding: 16px 16px 18px;
+  }
+
+  .reviews-head{
+    align-items: flex-start;
+  }
+
+  .review-booking-top{
+    gap: 14px;
+  }
+
+  .review-booking-card{
+    border-radius: 20px;
+    padding: 18px 18px;
+    min-height: 170px;
+  }
+
+  .review-booking-title{
+    font-size: 1.15rem;
+  }
+
+  .review-booking-meta{
+    font-size: .92rem;
+    line-height: 1.5;
+  }
+
+  .review-booking-body{
+    font-size: .98rem;
+  }
+
+  .review-score{
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 12px;
+    font-size: .96rem;
+  }
+
+  .reviews-dots-booking [data-bs-target]{
+    width: 7px;
+    height: 7px;
+  }
+
+  .reviews-dots-booking .active{
+    width: 22px;
+  }
+
+  .carousel-control-minimal{
+    width: 34px;
+  }
+
+  .carousel-control-minimal .carousel-control-prev-icon,
+  .carousel-control-minimal .carousel-control-next-icon{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ===== TELEFONO PICCOLO ===== */
+@media (max-width: 399.98px){
+  .hero-card{
+    padding: 16px 14px 14px;
+  }
+
+  .chip{
+    font-size: .82rem;
+    padding: .34rem .58rem;
+  }
+
+  .review-booking-card{
+    padding: 16px;
+  }
+
+  .review-booking-title{
+    font-size: 1.02rem;
+  }
+
+  .review-booking-body{
+    font-size: .94rem;
+  }
+}
