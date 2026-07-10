@@ -19,16 +19,13 @@
 html{
   scroll-behavior: smooth;
 }
-
 body{
   background: linear-gradient(180deg, var(--c1), #ffffff 55%, var(--c1));
   color: var(--c4);
 }
-
 .text-secondary{
   color: rgba(36,32,33,.78) !important;
 }
-
 a{
   text-decoration: none;
   color: var(--c4);
@@ -36,23 +33,54 @@ a{
 a:hover{
   color: var(--c2);
 }
-
 .layout{
   display: flex;
   min-height: 100vh;
 }
 .content{
-  flex: 1;
-  min-width: 0;
+    flex:1;
+    min-width:0;
+    overflow-x:hidden;
 }
-
 .review-booking-card{
     transition:.30s ease;
 }
-
 .review-booking-card:hover{
     transform:translateY(-6px);
     box-shadow:0 30px 70px rgba(0,0,0,.14);
+}
+
+/* ===== ANIMAZIONI ===== */
+.fade-up,
+.fade-down,
+.fade-left,
+.fade-right,
+.zoom-in{
+    opacity:0;
+    transition: opacity .8s ease, transform .8s ease;
+    will-change:opacity,transform;
+}
+.fade-up{
+    transform:translateY(30px);
+}
+
+.fade-down{
+    transform:translateY(-30px);
+}
+
+.fade-left{
+    transform:translateX(-30px);
+}
+
+.fade-right{
+    transform:translateX(30px);
+}
+.zoom-in{
+    transform:scale(.92);
+}
+.show{
+    opacity:1;
+    transform:none;
 }
 
 /* ===== TOPBAR MOBILE ===== */
@@ -72,6 +100,10 @@ a:hover{
 }
 
 /* ===== SIDEBAR ===== */
+.sidebar .btn,
+.offcanvas-body .btn{
+  width: 100%;
+}
 .sidebar{
   width: var(--sidebarW);
   position: sticky;
@@ -84,7 +116,6 @@ a:hover{
 .sidebar-muted{
   color: rgba(255,255,255,.78);
 }
-
 .brand{
   display: flex;
   align-items: center;
@@ -96,7 +127,6 @@ a:hover{
   height: 110px;
   width: auto;
 }
-
 #sidebarNav .nav-link{
   color: rgba(255,255,255,.92);
   border-radius: 12px;
@@ -188,7 +218,6 @@ a:hover{
   border-color: rgba(255,255,255,.85) !important;
   color: #fff !important;
 }
-
 .badge-soft{
   background: rgba(161,29,35,.10);
   border: 1px solid rgba(161,29,35,.22);
@@ -197,7 +226,6 @@ a:hover{
   border-radius: 999px;
   font-weight: 800;
 }
-
 .section-kicker{
   display: inline-block;
   margin-bottom: 10px;
@@ -211,12 +239,10 @@ a:hover{
   letter-spacing: .04em;
   text-transform: uppercase;
 }
-
 .section-subtitle{
   color: rgba(36,32,33,.70);
   font-weight: 600;
 }
-
 .chip{
   display: inline-flex;
   align-items: center;
@@ -232,6 +258,12 @@ a:hover{
 .chip:hover{
   background: rgba(161,29,35,.12);
   border-color: rgba(161,29,35,.35);
+}
+
+/* ===== HOME ===== */
+#home .btn{
+  height: 47px;
+  font-size: 20px;
 }
 
 /* ===== HERO ===== */
@@ -518,7 +550,7 @@ a:hover{
   color: rgba(36,32,33,.72);
 }
 
-/* ===== RECENSIONI STILE BOOKING ===== */
+/* ===== RECENSIONI ===== */
 .section-reviews-booking{
   background: linear-gradient(180deg, rgba(161,29,35,.02), rgba(255,255,255,.75));
   border-top: 1px solid rgba(161,29,35,.08);
@@ -588,42 +620,10 @@ a:hover{
   color: rgba(36,32,33,.85);
   max-width: 920px;
 }
-
-/* ===== FRECCE  ===== */
-.carousel-control-minimal{
-  width: 44px;
-  opacity: .9;
-}
-.carousel-control-minimal .carousel-control-prev-icon,
-.carousel-control-minimal .carousel-control-next-icon{
-  width: 60px;
-  height: 50px;
-  background-color: transparent;
-  background-size: 171% 130%;
-  border: 0;
-  box-shadow: none;
-  border-radius: 0;
-  filter: brightness(0) saturate(100%) invert(17%) sepia(84%) saturate(3120%) hue-rotate(344deg) brightness(85%) contrast(94%);
-}
-.carousel-control-minimal:hover{
-  opacity: 1;
-}
-.carousel-control-minimal:hover .carousel-control-prev-icon,
-.carousel-control-minimal:hover .carousel-control-next-icon{
-    filter: invert(14%) sepia(95%) saturate(3250%) hue-rotate(344deg) brightness(79%) contrast(98%);
-}
-
-.freccia-my{
-  margin: 95px 0 0;
-}
-
-
-/* ===== RECENSIONI ===== */
 .carousel-inner {
     width: 85%;
     margin: auto;
 }
-
 .reviews-dots-booking{
   position: absolute;
   right: 0;
@@ -647,6 +647,39 @@ a:hover{
   background: #A11D23;
 }
 
+/* ===== CONTATTI ===== */
+#contatti .btn-outline-light {
+    border-color: rgba(161, 29, 35, 0.88) !important;
+    color: rgba(161, 29, 35, 0.88) !important;
+}
+
+/* ===== FRECCE ===== */
+.carousel-control-minimal{
+  width: 44px;
+  opacity: .9;
+}
+.carousel-control-minimal .carousel-control-prev-icon,
+.carousel-control-minimal .carousel-control-next-icon{
+  width: 60px;
+  height: 50px;
+  background-color: transparent;
+  background-size: 171% 130%;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  filter: brightness(0) saturate(100%) invert(17%) sepia(84%) saturate(3120%) hue-rotate(344deg) brightness(85%) contrast(94%);
+}
+.carousel-control-minimal:hover{
+  opacity: 1;
+}
+.carousel-control-minimal:hover .carousel-control-prev-icon,
+.carousel-control-minimal:hover .carousel-control-next-icon{
+    filter: invert(14%) sepia(95%) saturate(3250%) hue-rotate(344deg) brightness(79%) contrast(98%);
+}
+.freccia-my{
+  margin: 95px 0 0;
+}
+
 /* ===== FOOTER ===== */
 .site-footer{
   background: linear-gradient(180deg, #A11D23 0%, #7f171d 100%);
@@ -662,6 +695,14 @@ a:hover{
 .footer-link:hover{
   color: #fff;
   text-decoration: underline;
+}
+
+footer,
+footer a{
+  font-size: 13px !important;
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
 }
 
 /* ===== ACCESSIBILITY ===== */

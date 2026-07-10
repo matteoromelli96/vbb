@@ -1,0 +1,16 @@
+{
+    "name": "VB&B",
+    "short_name": "VB&B",
+    "description": "Bed & Breakfast a Niardo",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#A11D23",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "64x64",
+            "type": "image/x-icon"
+        }
+    ]
+}
